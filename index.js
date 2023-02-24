@@ -15,8 +15,11 @@ function removeOuter(arrayToTrim) {
 const arrayOne = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const newArray = removeOuter(arrayOne);
 
-console.log("Array One");
+console.log("Challenge One");
 console.log("---------");
+console.log();
+
+console.log("<<<<<< Array One >>>>>>");
 console.log("Original Array: " + arrayOne);
 console.log("New Array: " + newArray);
 console.log();
@@ -24,8 +27,7 @@ console.log();
 const arrayTwo = [1, 2];
 const newArrayTwo = removeOuter(arrayTwo);
 
-console.log("Array Two");
-console.log("---------");
+console.log("<<<<<< Array Two >>>>>>");
 console.log("Original Array: " + arrayTwo);
 console.log("New Array: " + newArrayTwo);
 console.log();
@@ -48,12 +50,32 @@ function headingGenerator(size, content) {
 const heading = 6;
 const content = "hey there, I'm a header";
 
+console.log("Challenge Two");
+console.log("---------");
+console.log("<<<<<< Valid Header Size >>>>>>");
 console.log(headingGenerator(heading, content));
+console.log();
 
 const headingTwo = 7;
 const contentTwo = "hey there, I'm an invalid header";
 
+console.log("<<<<<< Invalid Header Size >>>>>>");
 console.log(headingGenerator(headingTwo, contentTwo));
-
+console.log();
 // 3) Swap the first and last characters of a string.
 // IE: "ryan" => "nyar"
+
+function charSwap(inString) {
+  return `${inString[inString.length - 1]}${inString.slice(
+    1,
+    inString.length - 1
+  )}${inString[0]}`.toLowerCase();
+}
+
+const userName = "John";
+const newUserName = charSwap(userName);
+
+console.log("Challenge Three");
+console.log("---------");
+console.log(`Original Value: ${userName}`);
+console.log(`New Value: ${newUserName}`);
